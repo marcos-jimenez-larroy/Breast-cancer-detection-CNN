@@ -68,8 +68,49 @@ It is important to stand out that, although this specific project does not use t
 
 # Results
 
+After 45 epochs, the loss in training set and validation set has declined quite noticeably. However, one possible improvement would be to lower the learning rate a bit even if the callback function (Decreasing LR on plateau) is not called; as both functions seem to have found another Plateau but it is not perfectly identified by the program. I also add here the precision and recall data from our model by epoch:
+![loss_45epochs](https://github.com/user-attachments/assets/fcd03cde-5196-488d-826b-abce63643806)
 
 
+![precision_45epochs](https://github.com/user-attachments/assets/66410aab-6a23-47ae-91d8-d3b34edbcb0a)
+
+
+![recall_45epochs](https://github.com/user-attachments/assets/24d24da3-d0ce-4888-8b15-827775ff4998)
+
+These graphs show that there is still room for imporvement by reducing a bit the learning rate; as it was done in epoch 24; where a significant improvement is made. While it is true that the validation functions oscillate quite a bit; in the overall they follow an acceptable path. 
+<br>
+To see the results by category, we created a specific function and obtained the following results; with the following legend:
+<br>
+0 -> Density1Benign 
+<br>
+1 -> Density1Malignant 
+<br>
+2 -> Density2Benign 
+<br>
+3 -> Density2Malignant 
+<br>
+4 -> Density3Benign 
+<br>
+5 -> Density3Malignant 
+<br>
+6 -> Density4Benign 
+<br>
+7 -> Density4Malignant 
+<br>
+![metrics](https://github.com/user-attachments/assets/2e074be3-61c6-4fc3-bb2c-b894fd562d9b)
+
+
+We have pretty high accuracy and precision for most of the different types of cancer; which is considered a success given that the NN is exclusively trained in a common portable computer. It is true that some types; like Density4Malignant, are more difficult to detect by the NN as well. With this example, we have only 50% recall but 100% precision; which means we are not totally capable of finding all the images with this label but all the ones we classified as D4M (Density4Malignant) were correctly classified. 
+<br>
+As another way of measuring the performance of the model, we just divided ou classification in Benign or Malignant; which is to our thoughts more important to differentiate than the type of each; which would be better differentiated by a doctor after this first classification.
+
+![ben_vs_mal](https://github.com/user-attachments/assets/b5f642a4-ea74-4492-be4f-e25ad876fcd4)
+
+We can see that both accuracy and precision are pretty similar and decently high (around 80% both). However, the big difference is the recall metric (measures how many of the real examples were classified). The good thing is that it is higher in the Malignant side; which means most of the malignant tumors were detected! This results are encouraging, as they only use a small NN in a common laptop. BY using more powerful computers plus using transfer learning, the results and applications of NN in thies field could really be life-changing.
+
+# Conclusion
+
+We used a COnvolutional Neural Network based on some previous known networks (specially VGG) to indentify different characteristics of breast by using mammography images; while also classifying them in Benign or Malignant (referring to the presence or likelyhood of a tumor there). The training was completed in 45 epochs (due to the laptop capacity) but the results were at the very least decent, making us believe that the application of NN in the medicine field could have a huge impact when trained with more powerful computers and when using already trained NN. 
 
 
 
