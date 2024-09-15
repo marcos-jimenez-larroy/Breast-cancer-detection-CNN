@@ -65,7 +65,7 @@ As it is easily seen, the last filter increases the contrast on the image and th
 # Neural Network architecture
 
 The Neural Network used is completely new (meaning it does not use transfer learning). It has three convolutional layers where the kernel size is 3x3 (based on the VGG network architecture), each of them followed by a Batch Normalization layer and pooling layer (MaxPooling of 2x2). After the three group of layers, we flatten the network and include three Dense Layers (with dropout layers as well) that end up in a 8-unit softmax layer; which will tell us the category that has been chosen to classify the specific image. Inside the .ipynb file there is an explanation deriving the number of parametrs in each layer. The model was fitted during 45 epochs (due to its relativily large size for a normal portable computer, we could not train for much more). 
-\n
+<br>
 It is important to stand out that, although this specific project does not use transfer learning as a trial to see how weel could my own computer do classifying the images; Transfer Learning is a really powerful tool that can and should be used when dealing with real world applications (using for example the previously mentioned VGG network or others such as DenseNet201).
 
 # Results
