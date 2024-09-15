@@ -22,6 +22,8 @@ Here you have some examples of the 8 different categories:
 ![D3M](https://github.com/user-attachments/assets/7d354770-c541-4dcc-a08c-ef9134f0dfde)
 ![D4M](https://github.com/user-attachments/assets/923cb718-fdee-499f-9803-655ecfd5c4d7)
 
+Link (TAKEN FROM THE MENTIONED REPOSITORY):  https://drive.google.com/file/d/12umDKmXJ8--ZmuiTrchSQRCs8SmRl12h/view
+
 # Image preprocessing
 Before training the NN, we had a look at our images to see if they were detailed enough or if we could do some changes to them. We tried three different filters to convolve them with; and then chose the one that seemed to improve the image the most.
 <br> 
