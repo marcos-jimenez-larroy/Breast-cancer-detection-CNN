@@ -112,7 +112,7 @@ We can see that both accuracy and precision are pretty similar and decently high
 
 # Conclusion
 
-We used a COnvolutional Neural Network based on some previous known networks (specially VGG) to indentify different characteristics of breast by using mammography images; while also classifying them in Benign or Malignant (referring to the presence or likelyhood of a tumor there). The training was completed in 45 epochs (due to the laptop capacity) but the results were at the very least decent, making us believe that the application of NN in the medicine field could have a huge impact when trained with more powerful computers and when using already trained NN. 
+We used a Convolutional Neural Network based on some previous known networks (specially VGG) to indentify different characteristics of breast by using mammography images; while also classifying them in Benign or Malignant (referring to the presence or likelyhood of a tumor there). The training was completed in 45 epochs (due to the laptop capacity) but the results were at the very least decent, making us believe that the application of NN in the medicine field could have a huge impact when trained with more powerful computers and when using already trained NN. 
 
 
 
